@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Deep Studios</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#08111d;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:28px;
+font-weight:700;
+}
+
+.logo img{
+height:60px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#57c4ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:75px;
+font-weight:800;
+}
+
+.hero p{
+margin-top:20px;
+font-size:22px;
+color:#d9ecff;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.discord{
+background:#5865F2;
+color:white;
+}
+
+.youtube{
+background:#ff0000;
+color:white;
+}
+
+.tiktok{
+background:#000;
+border:2px solid #25F4EE;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+section{
+padding:100px 10%;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:320px;
+border-radius:20px;
+box-shadow:0 0 35px #00b7ff;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.about-text p{
+line-height:1.8;
+font-size:18px;
+color:#d7d7d7;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#050b14;
+color:#aaa;
+}
+
+.socials{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.socials a{
+text-decoration:none;
+color:white;
+padding:15px 30px;
+background:#13233f;
+border-radius:12px;
+transition:.3s;
+}
+
+.socials a:hover{
+background:#1b4d8f;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:50px;
+}
+
+.about{
+text-align:center;
+justify-content:center;
+}
+
+header{
+padding:15px 5%;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+<span>Deep Studios</span>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#social">Socials</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to Deep Studios</h1>
+
+<p>
+Creating amazing games, experiences, and content for everyone.
+</p>
+
+<div class="buttons">
+
+<a class="btn discord"
+href="https://discord.gg/2nqkawXaYm"
+target="_blank">
+Discord
+</a>
+
+<a class="btn youtube"
+href="https://www.youtube.com/@deepstudiosfree"
+target="_blank">
+YouTube
+</a>
+
+<a class="btn tiktok"
+href="https://www.tiktok.com/@blackberryrivals"
+target="_blank">
+TikTok
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="about">
+
+<img src="logo.png">
+
+<div class="about-text">
+
+<h2>About Deep Studios</h2>
+
+<p>
+
+Deep Studios is an independent game development studio focused on creating fun,
+creative, and exciting experiences. We love building communities through our
+games, Discord server, YouTube videos, and TikTok content.
+
+Join our growing community and become part of the adventure!
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="social">
+
+<h2 style="text-align:center;font-size:50px;">Follow Us</h2>
+
+<div class="socials">
+
+<a href="https://discord.gg/2nqkawXaYm" target="_blank">
+💬 Discord
+</a>
+
+<a href="https://www.youtube.com/@deepstudiosfree" target="_blank">
+▶ YouTube
+</a>
+
+<a href="https://www.tiktok.com/@blackberryrivals" target="_blank">
+🎵 TikTok
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Deep Studios • All Rights Reserved
+
+</footer>
+
+</body>
+</html>
