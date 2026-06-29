@@ -3,238 +3,232 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Studios | Editing & Software Development</title>
 
-<title>Deep Studios</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#08111d;
-color:white;
-overflow-x:hidden;
+    background:#0a0f1c;
+    color:white;
 }
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.35);
-backdrop-filter:blur(10px);
-z-index:1000;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:15px;
-font-size:28px;
-font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .logo img{
-height:60px;
+    height:60px;
+}
+
+.logo h2{
+    color:#4db8ff;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:600;
-transition:.3s;
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#57c4ff;
+    color:#4db8ff;
 }
 
 .hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),
-url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(135deg,#09121f,#10233d,#09121f);
 }
 
-.hero h1{
-font-size:75px;
-font-weight:800;
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
 }
 
-.hero p{
-margin-top:20px;
-font-size:22px;
-color:#d9ecff;
+.hero-content span{
+    color:#4db8ff;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    color:#ccc;
+    font-size:1.1rem;
 }
 
 .buttons{
-margin-top:40px;
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
+    margin-top:30px;
 }
 
 .btn{
-padding:15px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
 }
 
 .discord{
-background:#5865F2;
-color:white;
+    background:#5865F2;
 }
 
 .youtube{
-background:#ff0000;
-color:white;
+    background:red;
 }
 
 .tiktok{
-background:#000;
-border:2px solid #25F4EE;
-color:white;
+    background:black;
+    border:2px solid #00f2ea;
 }
 
 .btn:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,.4);
+    transform:translateY(-5px);
 }
 
 section{
-padding:100px 10%;
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#4db8ff;
 }
 
 .about{
-display:flex;
-flex-wrap:wrap;
-gap:60px;
-align-items:center;
+    text-align:center;
 }
 
 .about img{
-width:320px;
-border-radius:20px;
-box-shadow:0 0 35px #00b7ff;
+    width:200px;
+    margin-bottom:25px;
 }
 
-.about-text{
-flex:1;
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
-.about-text h2{
-font-size:50px;
-margin-bottom:20px;
+.card{
+    background:#121b2c;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
 }
 
-.about-text p{
-line-height:1.8;
-font-size:18px;
-color:#d7d7d7;
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4db8ff;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    background:#121b2c;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#4db8ff;
+    font-size:2.5rem;
+}
+
+.contact{
+    text-align:center;
 }
 
 footer{
-padding:30px;
-text-align:center;
-background:#050b14;
-color:#aaa;
+    text-align:center;
+    padding:30px;
+    background:#050913;
+    color:#aaa;
 }
 
-.socials{
-display:flex;
-justify-content:center;
-gap:25px;
-margin-top:35px;
-flex-wrap:wrap;
-}
+@media(max-width:768px){
 
-.socials a{
-text-decoration:none;
-color:white;
-padding:15px 30px;
-background:#13233f;
-border-radius:12px;
-transition:.3s;
-}
-
-.socials a:hover{
-background:#1b4d8f;
-}
-
-@media(max-width:800px){
-
-.hero h1{
-font-size:50px;
-}
-
-.about{
-text-align:center;
-justify-content:center;
-}
-
-header{
-padding:15px 5%;
+.hero-content h1{
+    font-size:2.5rem;
 }
 
 nav{
-display:none;
+    display:none;
 }
 
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="logo">
-<img src="logo.png">
-<span>Deep Studios</span>
+<img src="Green Modern Fitness App Logo (1).png" alt="Deep Studios Logo">
+<h2>Deep Studios</h2>
 </div>
 
 <nav>
-<a href="#">Home</a>
 <a href="#about">About</a>
-<a href="#social">Socials</a>
+<a href="#services">Services</a>
+<a href="#stats">Stats</a>
+<a href="#contact">Contact</a>
 </nav>
-
 </header>
 
 <section class="hero">
-
-<div>
-
-<h1>Welcome to Deep Studios</h1>
-
+<div class="hero-content">
+<h1>Deep <span>Studios</span></h1>
 <p>
-Creating amazing games, experiences, and content for everyone.
+Professional Editing, Software Development, Website Design,
+Discord Services, Graphics, and Digital Solutions.
 </p>
 
 <div class="buttons">
@@ -242,7 +236,7 @@ Creating amazing games, experiences, and content for everyone.
 <a class="btn discord"
 href="https://discord.gg/2nqkawXaYm"
 target="_blank">
-Discord
+Join Discord
 </a>
 
 <a class="btn youtube"
@@ -258,63 +252,111 @@ TikTok
 </a>
 
 </div>
-
 </div>
-
 </section>
 
 <section id="about">
+<h2 class="section-title">About Us</h2>
 
 <div class="about">
-
-<img src="logo.png">
-
-<div class="about-text">
-
-<h2>About Deep Studios</h2>
+<img src="Green Modern Fitness App Logo (1).png">
 
 <p>
-
-Deep Studios is an independent game development studio focused on creating fun,
-creative, and exciting experiences. We love building communities through our
-games, Discord server, YouTube videos, and TikTok content.
-
-Join our growing community and become part of the adventure!
-
+Deep Studios is a creative team focused on software development,
+website creation, video editing, graphic design, and digital solutions.
+We help creators, businesses, and communities bring their ideas to life.
 </p>
-
 </div>
-
-</div>
-
 </section>
 
-<section id="social">
+<section id="services">
+<h2 class="section-title">Our Services</h2>
 
-<h2 style="text-align:center;font-size:50px;">Follow Us</h2>
+<div class="services">
 
-<div class="socials">
+<div class="card">
+<h3>💻 Software Development</h3>
+<p>Custom software, tools, Discord bots, and automation systems.</p>
+</div>
 
-<a href="https://discord.gg/2nqkawXaYm" target="_blank">
-💬 Discord
-</a>
+<div class="card">
+<h3>🌐 Website Development</h3>
+<p>Modern, responsive, and professional websites.</p>
+</div>
 
-<a href="https://www.youtube.com/@deepstudiosfree" target="_blank">
-▶ YouTube
-</a>
+<div class="card">
+<h3>🎬 Video Editing</h3>
+<p>YouTube videos, shorts, gaming edits, and promotional content.</p>
+</div>
 
-<a href="https://www.tiktok.com/@blackberryrivals" target="_blank">
-🎵 TikTok
+<div class="card">
+<h3>🎨 Graphic Design</h3>
+<p>Logos, banners, thumbnails, branding, and social media graphics.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Discord Services</h3>
+<p>Server setup, moderation systems, bots, and community management.</p>
+</div>
+
+<div class="card">
+<h3>📈 Digital Solutions</h3>
+<p>Helping businesses and creators grow online.</p>
+</div>
+
+</div>
+</section>
+
+<section id="stats">
+<h2 class="section-title">Deep Studios</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>100+</h2>
+<p>Projects</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Clients</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Dedication</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<p>
+Need a website, edit, bot, logo, or software project?
+</p>
+
+<br>
+
+<a class="btn discord"
+href="https://discord.gg/2nqkawXaYm"
+target="_blank">
+Open a Ticket
 </a>
 
 </div>
-
 </section>
 
 <footer>
-
-© 2026 Deep Studios • All Rights Reserved
-
+© 2026 Deep Studios. All Rights Reserved.
 </footer>
 
 </body>
